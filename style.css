@@ -10,3 +10,15 @@ body {
     margin-right: auto;
     width: 30%;
 }
+
+li.post-item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+div.container:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+}
