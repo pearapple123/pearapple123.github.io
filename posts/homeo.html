@@ -2,11 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Homeomorphic spaces have isomorphic fundamental groups</title>
+        <title>Homotopically equivalent spaces have isomorphic fundamental groups</title>
         <script>
             MathJax = {
                 tex: {
-                    inlineMath: [['$', '$'], ['\$', '\$']],
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
                 }
             };
         </script>
@@ -16,14 +16,17 @@
     </head>
     <body>
 
-        <h1>Homeomorphic spaces have isomorphic fundamental groups</h1>
+        <h1>Homotopically equivalent spaces have isomorphic fundamental groups</h1>
         <p>
             Just trying some MathJax.
         </p>
         <div>
-            <p><em>Let $X$ and $Y$ be homeomorphic spaces, then their fundamental groups $\pi_1(X)$ and $\pi_1(Y)$ are isomorphic.</em></p>
+            <p><em>Let $X$ and $Y$ be homotopically equivalent spaces, then their fundamental groups $\pi_1(X)$ and $\pi_1(Y)$ are isomorphic.</em></p>
             <p>
-                Define a functor $F:\mathbf{Top}\to\mathbf{Grp}$ which sends every topological space $X$ to its fundamental group $\pi_1(X)$, and every continuous map $f:X\to Y$ to its induced homomorphism $f_*:\pi_1(X)\to\pi_1(Y)$. This preserves composition as $(fg)_*=f_*\circ g_*$ and $F(\mathrm{Id}_X)=\mathrm{Id}_{\pi_1(X)}$ so this is indeed a covariant functor. Then $F$ preserves isomorphisms. QED.
+                Define a functor $F:\mathbf{Top}_*\to\mathbf{Grp}$ which sends every pointed topological space $(X,x_0)$ to its fundamental group $\pi_1(X,x_0)$, and every basepoint-preserving continuous map $f:(X,x_0)\to (Y,y_0)$ to its induced homomorphism $f_*:\pi_1(X,x_0)\to\pi_1(Y,y_0)$. This preserves composition as $(fg)_*=f_*\circ g_*$ and $F(\mathrm{Id}_X)=\mathrm{Id}_{\pi_1(X)}$ so this is indeed a covariant functor.
+            </p> 
+            <p>
+                Since $X\simeq Y$, fix basepoints $x_0\in X$ and $y_0\in Y$, then $(X,x_0)\simeq (Y,y_0)$ with homotopy equivalence $f$ and homotopic inverse $g$.
             </p>
         </div>
     </body>
