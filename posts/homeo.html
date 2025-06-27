@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Homeomorphic spaces have isomorphic fundamental groups</title>
+        <script>
+            MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\$', '\$']],
+                }
+            };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <link rel="stylesheet" href="..\style.css"> 
+    </head>
+    <body>
+
+        <h1>Homeomorphic spaces have isomorphic fundamental groups</h1>
+        <p>
+            Just trying some MathJax.
+        </p>
+        <div>
+            <p><em>Let $X$ and $Y$ be homeomorphic spaces, then their fundamental groups $\pi_1(X)$ and $\pi_1(Y)$ are isomorphic.</em></p>
+            <p>
+                Define a functor $F:\mathbf{Top}\to\mathbf{Grp}$ which sends every topological space $X$ to its fundamental group $\pi_1(X)$, and every continuous map $f:X\to Y$ to its induced homomorphism $f_*:\pi_1(X)\to\pi_1(Y)$. This preserves composition as $(fg)_*=f_*\circ g_*$ and $F(\mathrm{Id}_X)=\mathrm{Id}_{\pi_1(X)}$ so this is indeed a covariant functor. Then $F$ preserves isomorphisms. QED.
+            </p>
+        </div>
+    </body>
+</html>
